@@ -178,7 +178,7 @@ class FckScanner:
 
 def ScanThread():
     """
-    使用多进程跑，每次开100条进程，同时扫描100个网站
+    使用多进程跑，每次开50条进程，同时扫描50个网站
     :return:
     """
     processnum = 50
@@ -198,6 +198,4 @@ def ScanThread():
 
 
 if __name__ == '__main__':
-    # FckScanner("http://daintyhome.com.tr/")
-    FckScanner("http://longtuyen.vn/")
-    # ScanThread()
+    ScanThread()
